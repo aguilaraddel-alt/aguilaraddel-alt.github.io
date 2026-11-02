@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Addel Aguilar’s student portfolio: web design, cloud coursework, and practical technology projects.">
+  <title>Addel Aguilar | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Addel Aguilar home">AA<span> / Portfolio</span></a>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+    <nav id="navigation" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    <button id="theme-toggle" type="button" aria-pressed="false" hidden>Dark theme</button>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section id="home" class="hero wrap">
+      <p class="eyebrow">Addel Aguilar · FIU student</p>
+      <h1>Learning by building.<br><span>One project at a time.</span></h1>
+      <p class="intro">A collection of web design ideas and practical technology coursework, with an emphasis on clear interfaces and useful interactions.</p>
+      <a class="button" href="#projects">Explore the projects <span aria-hidden="true">↗</span></a>
+      <div class="hero-note"><span>01 / Web design</span><span>02 / Cloud concepts</span><span>03 / Hands-on learning</span></div>
+    </section>
+    <section id="about" class="wrap section about"><div><p class="eyebrow">A little background</p><h2>About me</h2></div><div><p>I’m Addel Aguilar, a student at Florida International University. This portfolio brings together my work in designing web pages and exploring cloud technology.</p><p>I’m interested in how technology can support everyday tasks. The examples below focus on readable content, responsive layouts, and interactions that work with a keyboard as well as a mouse.</p><p class="muted">This is a student portfolio. Concept projects are labeled as samples.</p></div></section>
+    <section id="skills" class="wrap section"><p class="eyebrow">Tools &amp; practice</p><h2>What I’m learning</h2><div class="table-wrap"><table><caption>Areas explored through coursework and portfolio examples</caption><thead><tr><th scope="col">Area</th><th scope="col">Tools or concepts</th><th scope="col">Application</th></tr></thead><tbody><tr><th scope="row">Web structure</th><td>HTML5, semantic landmarks</td><td>Organized, accessible pages</td></tr><tr><th scope="row">Responsive design</th><td>CSS, Flexbox, Grid</td><td>Layouts for phones and desktops</td></tr><tr><th scope="row">Interaction</th><td>JavaScript, DOM, JSON</td><td>Project gallery and form feedback</td></tr><tr><th scope="row">Cloud concepts</th><td>Azure fundamentals</td><td>Coursework on services and governance</td></tr></tbody></table></div></section>
+    <section id="projects" class="wrap section"><div class="section-heading"><div><p class="eyebrow">Selected concepts</p><h2>Small ideas, practical details.</h2></div><label for="project-filter">Show projects<select id="project-filter"><option value="all">All projects</option><option value="web">Web design</option><option value="cloud">Cloud concepts</option></select></label></div><p id="project-count" role="status"></p><div id="project-gallery" class="gallery"></div><noscript><p>Enable JavaScript to view the interactive gallery. Sample projects: Workshop Directory, Cloud Study Planner, and Reading Tracker.</p></noscript></section>
+    <section id="contact" class="wrap section contact"><div><p class="eyebrow">Start a conversation</p><h2>Let’s connect.</h2><p>Try the contact form to preview a message. This demonstration checks your entries locally; it does not send or store them.</p></div><form id="contact-form"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="name-error"><span class="error" id="name-error"></span><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error"><span class="error" id="email-error"></span><label for="topic">Topic</label><select id="topic" name="topic"><option>Web design</option><option>Cloud coursework</option><option>Other</option></select><fieldset><legend>Message purpose</legend><label class="choice"><input type="radio" name="purpose" value="feedback" checked> Share feedback</label><label class="choice"><input type="radio" name="purpose" value="question"> Ask a question</label></fieldset><label for="message">Message</label><textarea id="message" name="message" rows="5" required minlength="10" maxlength="1200" aria-describedby="message-error"></textarea><span class="error" id="message-error"></span><label class="choice"><input type="checkbox" id="demo" required aria-describedby="demo-error"> I understand this is a preview, not a sent message.</label><span class="error" id="demo-error"></span><div class="actions"><button class="button" type="submit">Preview message</button><button type="reset">Clear</button></div><p id="form-status" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer class="wrap"><p>Addel Aguilar · Student portfolio</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
